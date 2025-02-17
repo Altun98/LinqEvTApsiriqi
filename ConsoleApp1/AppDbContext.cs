@@ -1,0 +1,18 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public class AppDbContext : DbContext
+    {
+        public DbSet<Employee> Employees { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=CAHID\\MY_DB;Database=DB_EF;User Id=sa;Password=2016;TrustServerCertificate=True;");
+        }
+    }
+}
