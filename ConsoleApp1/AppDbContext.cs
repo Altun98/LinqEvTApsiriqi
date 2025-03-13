@@ -14,7 +14,8 @@ namespace ConsoleApp1
         {
             //sdsdsdsd
             // sdsdd
-            int a = 12;
+            int a = 12; int x = 123;
+            Console.WriteLine("Salam Miri  Qismet Ehmed");
             optionsBuilder.UseSqlServer("Server=CAHID\\MY_DB;Database=DB_EF;User Id=sa;Password=2016;TrustServerCertificate=True;");
         }
     }
