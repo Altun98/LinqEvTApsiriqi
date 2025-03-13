@@ -16,6 +16,8 @@ namespace ConsoleApp1
             // sdsdd
             int a = 12; int x = 123;
             Console.WriteLine("Salam Miri  Qismet Ehmed");
+            Console.WriteLine("teststsd");
+            Console.WriteLine();
             optionsBuilder.UseSqlServer("Server=CAHID\\MY_DB;Database=DB_EF;User Id=sa;Password=2016;TrustServerCertificate=True;");
         }
     }
